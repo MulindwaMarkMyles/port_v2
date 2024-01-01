@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+        box-sizing:border-box;
+        padding: 0;
+        margin:0;
+        font-family:'Poppins';
+}
+html {
+        scroll-behavior: smooth;
+}
+body {
+        background: #252B2F;
+        margin:100px 100px;
+        height:3000px;
+}
+@media (max-width:450px) {
+        body {
+                margin:100px 20px;
+        }
+}
+@media (max-width:730px) {
+        body {
+                margin:80px 20px;
+        }
+}
+.head {
+        color:white;
+        font-size:25px;
+        position:fixed;
+        top:10px;
+        left:20px;
+        font-weight: 400;
+        background: #252B2F;
+        padding:5px 10px;
+        z-index: 100;
+        border-radius: 7px;
+}
+.head small span{
+        color:lightgreen;
+        margin-right:10px;
+}
+.intro {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        gap:20px;
+}
+.text-group {
+        display: flex;
+        flex-direction: column;
+        color:white;
+}
+.name {
+        font-size:clamp(4vw, 30px, 20vw);
+        font-weight: 600;
+}
+.text {
+        margin:20px 0px;
+        font-size:clamp(10px,4vw,25px);
+}
+.essay a,
+.text-group a {
+        text-decoration: none;
+}
+.essay a,
+.text-group a button {
+        padding:5px 10px;
+        font-size:17px;
+        font-weight: 500;
+        background: #A3C4BC;
+        border:none;
+        cursor: pointer;
+        border-radius: 5px;
+        color:black;
+        width:fit-content;
+}
+.img-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+}
+.img {
+        object-fit: cover;
+        border-radius: 4px;
+        width:clamp(30vw,190px,20vw);
+        max-width: 300px;
+}
+.bar {
+        font-size:40px;
+        font-style:italic;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        opacity:0.5;
+        color:#373F51;
+        margin-top:100px;
+        margin-bottom:100px;
+}
+.about {
+        white-space: normal;
+        display:grid;
+        gap:20px;
+        place-items: center;
+        grid-template-columns: 1fr 2fr;
+}
+.img-2 {
+        object-fit: cover;
+        display: inline;
+        opacity: 0.3;
+        width:clamp(30vw,190px,20vw);
+}
+.essay {
+        word-break: break-all;
+        color:white;
+        font-size: clamp(7px,3vw,25px);
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+}
+.projects {
+        display: grid;
+        gap:15px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-notes,
+.section,
+.homepage-pc-section,
+.img-container,
+.matrix-section,
+.snake-section {
+        display: flex;
+        flex-direction: column;
+}
+.section-notes img,
+.section img,
+.homepage-pc-section img,
+.matrix-section img,
+.snake-section img ,
+.img-container img {
+        object-fit: cover;
+        max-width: 300px;
+        max-height: 300px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        margin-bottom:2px;
+}
+.projects > * {
+        border-radius: 5px;
+}
+.notes,
+.cleaner,
+.homepage-pc,
+.homepage-mobile,
+.matrix,
+.snake {
+        background:#A3C4BC ;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        word-break: break-all;
+        padding:10px;
+        color:white;
+        max-width: 300px;
+}
+.notes a,
+.cleaner a,
+.homepage-pc a,
+.homepage-mobile a,
+.matrix a,
+.snake a {
+        text-decoration: underline;
+        color:black;
+}
+.contacts-and-resume {
+        display: block;
+}
+.links a img {
+        height: 20px;
+        width:20px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-right:10px;
+}
+.links a {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        color:white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        width:fit-content;
+        margin:5px 20px;
+        font-weight: 300;
+}
+.links a:hover {
+        color:#E6F14A;
+}
