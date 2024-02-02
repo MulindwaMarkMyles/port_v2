@@ -146,6 +146,7 @@ body {
         gap:15px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+.section-photie,
 .section-notes,
 .section,
 .homepage-pc-section,
@@ -155,6 +156,7 @@ body {
         display: flex;
         flex-direction: column;
 }
+.section-photie img,
 .section-notes img,
 .section img,
 .homepage-pc-section img,
@@ -162,8 +164,8 @@ body {
 .snake-section img ,
 .img-container img {
         object-fit: cover;
-        max-width: 300px;
-        max-height: 300px;
+        width: inherit;
+        height: inherit;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
         margin-bottom:2px;
@@ -175,6 +177,7 @@ body {
 .projects > *:hover {
         transform:scale(1.1);
 }
+.photie,
 .notes,
 .cleaner,
 .homepage-pc,
@@ -189,6 +192,7 @@ body {
         color:white;
         max-width: 300px;
 }
+.photie a,
 .notes a,
 .cleaner a,
 .homepage-pc a,
