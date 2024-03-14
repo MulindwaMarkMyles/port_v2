@@ -146,25 +146,45 @@ body {
         gap:15px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.section-photie,
-.section-notes,
-.section,
-.homepage-pc-section,
-.img-container,
-.matrix-section,
-.snake-section {
-        display: flex;
-        flex-direction: column;
+
+@media (max-width:750px){
+        .section-photie,
+        .section-notes,
+        .section,
+        .homepage-pc-section,
+        .homepage-mobile-section,
+        .img-container,
+        .matrix-section,
+        .snake-section {
+                display: flex;
+                flex-direction: column;
+                width:300px;
+        }
+}
+@media (min-width:751px){
+        .section-photie,
+        .section-notes,
+        .section,
+        .homepage-pc-section,
+        .homepage-mobile-section,
+        .img-container,
+        .matrix-section,
+        .snake-section {
+                display: flex;
+                flex-direction: column;
+                width:fit-content;
+        }
 }
 .section-photie img,
 .section-notes img,
 .section img,
 .homepage-pc-section img,
+.homepage-mobile-section img,
 .matrix-section img,
 .snake-section img ,
 .img-container img {
         object-fit: cover;
-        width: inherit;
+        width: 100%;
         height: inherit;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
@@ -190,7 +210,7 @@ body {
         word-break: break-all;
         padding:10px;
         color:white;
-        max-width: 300px;
+        width: 100%;
 }
 .photie a,
 .notes a,
